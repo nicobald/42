@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
+/*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:37:05 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/04/03 13:57:22 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 15:50:45 by nbaldes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(char c) // check if char c is an ascii char
+int ft_isascii(int c) // check if char c is an ascii char
 {
     if (c >= 0 && c <= 127)
         return (1);

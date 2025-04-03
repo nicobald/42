@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
+/*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:38:17 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/04/03 13:57:56 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 16:51:46 by nbaldes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void *ft_memset(void *s, int a, size_t n) // put n time char a into the mem
 {
-    int i;
+    size_t i;
     unsigned char a1;
     unsigned char *s1;
 
