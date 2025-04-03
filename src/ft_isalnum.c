@@ -6,13 +6,13 @@
 /*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:36:44 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/03/27 16:29:30 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 13:56:53 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(char c)
+int ft_isalnum(char c) // check if char c is alpha/numerique
 {
     if ((c >= '0' && c <= '9')
         || (c >= 'a' && c <= 'z')

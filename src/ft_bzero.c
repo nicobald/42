@@ -6,13 +6,13 @@
 /*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:38:51 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/03/27 16:01:06 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 13:57:09 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s,size_t n)
+void ft_bzero(void *s,size_t n) //reset mem to 0 on n octets
 {
     unsigned char *str;
     size_t i;

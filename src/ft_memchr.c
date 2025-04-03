@@ -6,11 +6,13 @@
 /*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:43:22 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/03/27 17:21:11 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 13:57:41 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memchr(const void *s, int c, size_t n)
+#include "libft.h"
+
+void *ft_memchr(const void *s, int c, size_t n) //go trought the mem on n octet to return the adress of the first occurence of 'c'
 {
     size_t i;
     unsigned char *str;

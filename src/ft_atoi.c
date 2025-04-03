@@ -6,13 +6,13 @@
 /*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:44:24 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/03/27 12:55:41 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 13:57:03 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(char *str)
+int ft_atoi(char *str) //convert alpha to integer
 {
     int i;
     int sign;

@@ -6,11 +6,13 @@
 /*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:40:02 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/03/28 13:46:18 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/03 13:57:53 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memmove(void *dest, const void *src, size_t n)
+#include "libft.h"
+
+void *ft_memmove(void *dest, const void *src, size_t n) //move n char of the mem in an other place 
 {
     size_t i;
     unsigned char *dest1;
