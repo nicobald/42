@@ -3,10 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:47:05 by nbaldes           #+#    #+#             */
-/*   Updated: 2025/04/03 16:47:06 by nbaldes          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:53:56 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void ft_putnbr_fd(int n, int fd)
+{
+    write(fd, &n, 1);
+}

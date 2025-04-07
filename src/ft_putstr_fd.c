@@ -3,10 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
+/*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:46:08 by nbaldes           #+#    #+#             */
-/*   Updated: 2025/04/03 16:46:35 by nbaldes          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:54:02 by utilisateur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void ft_putstr_fd(char *s, int fd)
+{
+    int i;
+
+    i = 0;
+    while (s[i])
+    {
+        write(fd, &s[i], 1);
+        i++;
+    }
+}
