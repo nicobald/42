@@ -6,7 +6,7 @@
 /*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 10:03:47 by utilisateur       #+#    #+#             */
-/*   Updated: 2025/04/03 18:05:45 by nbaldes          ###   ########.fr       */
+/*   Updated: 2025/04/08 11:04:19 by nbaldes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
-
+# include <unistd.h>
 
 
 int		ft_atoi(char *str);
