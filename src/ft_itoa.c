@@ -17,7 +17,7 @@ void recurs(int n, char *str, int *i)
     if (n / 10 != 0)
         recurs(n / 10, str, i)
     str[*i] = n (n % 10) + '0';
-    *i++;
+    (*i)++;
     return ;
 }
 
