@@ -6,7 +6,7 @@
 /*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 15:56:16 by nbaldes           #+#    #+#             */
-/*   Updated: 2025/04/08 17:20:48 by nbaldes          ###   ########.fr       */
+/*   Updated: 2025/04/08 17:28:11 by nbaldes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
-	int	start;
-    int end;
-	int	len;
+	int i;
+	int j;
+	int start;
+	int end;
+	int len;
 
 	j = 0;
 	i = 0;
-		while (s1[i] == set[j])
-		{
-			i++;
-			j++;
-		}
+	while (s1[i] == set[j])
+	{
+		i++;
+		j++;
+	}
 	start = i;
 	len = ft_strlen((char *)s1);
-        while (s1[len] == set[j])
-        {
-            len--;
-            j--;
-        }
-   end = len;
-   return(ft_substr((char*)s1, start, end));
+	while (s1[len] == set[j])
+	{
+		len--;
+		j--;
+	}
+	end = len;
+	return (ft_substr((char *)s1, start, end));
 }
