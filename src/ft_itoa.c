@@ -3,37 +3,58 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: utilisateur <utilisateur@student.42.fr>    +#+  +:+       +#+        */
+/*   By: nbaldes <nbaldes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:44:26 by nbaldes           #+#    #+#             */
-/*   Updated: 2025/04/08 09:53:18 by utilisateur      ###   ########.fr       */
+/*   Updated: 2025/04/08 14:28:56 by nbaldes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "stdlib.h"
 
-void recurs(int n, char *str, int *i)
+static int	ft_nbrlen(long nbr)
 {
-    if (n / 10 != 0)
-        recurs(n / 10, str, i)
-    str[*i] = n (n % 10) + '0';
-    (*i)++;
-    return ;
+	int	len;
+
+	len = (nbr <= 0) ? 1 : 0;
+	while (nbr)
+	{
+		nbr /= 10;
+		len++;
+	}
+	return (len);
 }
 
-char *itoa(int n)
+static void	ft_convert(char *str, long nbr, int len)
 {
-    int i;
+	if (nbr < 0)
+	{
+		str[0] = '-';
+		nbr = -nbr;
+	}
+	else if (nbr == 0)
+	{
+		str[0] = '0';
+	}
+	while (nbr)
+	{
+		str[--len] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
+}
 
-    i = 0;
-    char *str = malloc(12);
-    if (n < 0)
-    {
-        str[i] = '-';
-        i++;
-        n = -n;
-    }
-    recurs(n, str, i)
-    str[i] = '\0';
-    return (str);
+char	*ft_itoa(int n)
+{
+	long	nbr;
+	int		len;
+	char	*str;
+
+	nbr = n;
+	len = ft_nbrlen(nbr);
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	ft_convert(str, nbr, len);
+	return (str);
 }
